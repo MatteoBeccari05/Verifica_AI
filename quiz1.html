@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Informatica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Informatica</h1>
+        <div id="timer">60:00</div> <!-- Timer che viene mostrato anche su questa pagina -->
+    </header>
+    
+    <div id="quizText">
+        <p><strong>Introduzione:</strong> L'informatica è una disciplina che si occupa dell'elaborazione automatica delle informazioni tramite l'uso di computer e sistemi informatici. Essa include vari settori, come la programmazione, la gestione dei dati, le reti di comunicazione e la sicurezza informatica. Il termine "informatica" deriva dalla combinazione delle parole "informazione" e "automatica", sottolineando il suo obiettivo di automatizzare il trattamento delle informazioni. Con l'avvento della tecnologia, l'informatica ha influenzato tutti gli aspetti della vita quotidiana, dal lavoro alla comunicazione, fino all'educazione e all'intrattenimento.</p>
+    </div>
+
+    <form id="quizForm">
+        <div class="question">
+            <p><strong>1. Cosa significa "informatica"?</strong></p>
+            <label><input type="radio" name="q11" value="a"> Il trattamento manuale delle informazioni</label><br>
+            <label><input type="radio" name="q11" value="b"> L'elaborazione automatica delle informazioni tramite computer</label><br>
+            <label><input type="radio" name="q11" value="c"> Lo studio dei computer senza l'uso di software</label><br>
+            <label><input type="radio" name="q11" value="d"> Un tipo di programmazione basata sull'analisi dei dati</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>2. Quali sono alcuni dei principali settori dell'informatica?</strong></p>
+            <label><input type="radio" name="q21" value="a"> Solo la programmazione e la gestione dei dati</label><br>
+            <label><input type="radio" name="q21" value="b"> La programmazione, la gestione dei dati, le reti e la sicurezza informatica</label><br>
+            <label><input type="radio" name="q21" value="c"> La gestione dei dati e l'educazione</label><br>
+            <label><input type="radio" name="q21" value="d"> Solo la sicurezza informatica e l'educazione</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>3. Qual è l'obiettivo principale dell'informatica?</strong></p>
+            <label><input type="radio" name="q31" value="a"> Automatizzare il trattamento delle informazioni</label><br>
+            <label><input type="radio" name="q31" value="b"> Creare nuovi dispositivi hardware</label><br>
+            <label><input type="radio" name="q31" value="c"> Progettare software complessi per la gestione dei dati</label><br>
+            <label><input type="radio" name="q31" value="d"> Studiare l'intelligenza artificiale</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>4. In quale ambito l'informatica ha influenzato maggiormente la vita quotidiana?</strong></p>
+            <label><input type="radio" name="q41" value="a"> Solo nel lavoro</label><br>
+            <label><input type="radio" name="q41" value="b"> Nella comunicazione e nell'intrattenimento</label><br>
+            <label><input type="radio" name="q41" value="c"> Nella programmazione software</label><br>
+            <label><input type="radio" name="q41" value="d"> Solo nell'educazione</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>5. Cosa combina il termine "informatica"?</strong></p>
+            <label><input type="radio" name="q51" value="a"> Le parole "internet" e "tecnica"</label><br>
+            <label><input type="radio" name="q51" value="b"> Le parole "informazione" e "automatica"</label><br>
+            <label><input type="radio" name="q51" value="c"> Le parole "intelligenza" e "informatica"</label><br>
+            <label><input type="radio" name="q51" value="d"> Le parole "software" e "hardware"</label><br>
+        </div>
+
+        <br>
+        <button type="button" onclick="window.location.href='index.html'">Indietro</button>
+    </form>
+
+    <!-- Includiamo lo script per il timer -->
+    <script src="script.js"></script>
+</body>
+</html>

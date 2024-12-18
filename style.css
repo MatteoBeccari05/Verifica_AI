@@ -1,0 +1,134 @@
+/* Stile base per il corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;            /* Flexbox per centrare tutto il contenuto */
+    flex-direction: column;   /* Disporre il contenuto in colonna */
+    justify-content: flex-start;  /* Iniziamo da in alto */
+    align-items: center;      /* Allinea tutto al centro */
+    height: 100vh;            /* Altezza della finestra intera */
+    padding-left: 50px;       /* Aggiungi un margine sinistro di 50px */
+    box-sizing: border-box;   /* Considera padding e bordi per tutte le dimensioni */
+    margin-top: 60px;         /* Distanza dall'alto per evitare che il contenuto si sovrapponga all'header */
+}
+
+/* Stile per l'header */
+header {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;              /* Assicura che l'header copra tutta la larghezza */
+    box-sizing: border-box;   /* Considera il padding nel calcolo delle dimensioni */
+    text-align: left;         /* Allinea il testo dell'header a sinistra */
+    position: fixed;          /* Fissa l'header in alto */
+    top: 0;                   /* Posiziona l'header in cima alla pagina */
+    left: 0;                  /* Posiziona l'header a sinistra */
+    z-index: 1000;            /* Assicura che l'header sia sempre sopra altri elementi */
+}
+
+/* Impostazioni per il titolo */
+h1 {
+    margin: 0;                /* Rimuove il margine default dell'h1 */
+    font-size: 1.8em;          /* Aumenta leggermente la dimensione del testo */
+}
+
+/* Posizione assoluta del timer in alto a destra */
+#timer {
+    position: fixed;  /* Fissato rispetto alla finestra */
+    top: 10px;        /* Distanza dall'alto */
+    right: 20px;      /* Distanza dalla destra */
+    background-color:  #3a3a3a; /* Sfondo traslucido */
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 1001;  /* Assicurati che il timer sia visibile sopra gli altri contenuti */
+}
+
+/* Stile per i bottoni delle domande */
+#buttons-questions {
+    display: flex; /* Impostiamo flexbox per disporre i bottoni in orizzontale */
+    justify-content: center; /* Allinea i bottoni al centro */
+    align-items: center; /* Allinea i bottoni verticalmente */
+    gap: 20px; /* Spaziatura tra i bottoni */
+    flex-wrap: wrap; /* Consente ai bottoni di andare su più righe se non c'è abbastanza spazio */
+    padding: 20px;
+    margin-top: 80px; /* Spazio extra sotto l'header */
+    width: 100%;  /* Assicura che i bottoni occupino tutta la larghezza */
+}
+
+/* Stile per i bottoni "Consegna" e "Reset" */
+#buttons-actions {
+    display: flex;
+    justify-content: center; /* Centra i bottoni "Consegna" e "Reset" */
+    gap: 20px; /* Spaziatura tra i bottoni */
+    margin-top: 20px; /* Distanza tra i bottoni delle domande e quelli di "Consegna" e "Reset" */
+    width: 100%;  /* Assicura che i bottoni occupino tutta la larghezza */
+}
+
+/* Stile per ogni singolo bottone */
+button {
+    background-color:  #3a3a3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4546a0;
+}
+
+/* Aggiungere uno spazio sopra il contenuto per evitare sovrapposizione con l'header */
+#quizForm {
+    margin-top: 80px; /* Aggiungi spazio extra per compensare l'header fisso */
+    width: 100%;  /* Permette alle domande di occupare l'intera larghezza */
+}
+
+/* Stile responsivo per dispositivi mobili */
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px; /* Riduce il padding per schermi più piccoli */
+        padding-right: 20px; /* Aggiungi un po' di spazio a destra per evitare che il testo tocchi i bordi */
+    }
+
+    #timer {
+        font-size: 1.2em; /* Riduce la dimensione del timer su schermi più piccoli */
+    }
+
+    button {
+        font-size: 1em; /* Riduce la dimensione del bottone per schermi più piccoli */
+    }
+
+    .question {
+        margin: 10px 0; /* Riduce la distanza tra le domande */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;  /* Riduce la dimensione del titolo su schermi molto piccoli */
+    }
+
+    #timer {
+        font-size: 1em; /* Ancora più piccolo il timer su schermi piccoli */
+    }
+
+    button {
+        font-size: 0.9em; /* Riduce ulteriormente la dimensione del bottone */
+    }
+}
+
+.reset{
+    background-color: red;
+}
+
+.consegna{
+    background-color: green;
+}

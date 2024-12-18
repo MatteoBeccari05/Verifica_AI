@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Socket di Rete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz: Socket di Rete</h1>
+    </header>
+    
+    <div id="quizText">
+        <p><strong>Introduzione alle Socket</strong></p>
+        <p>Le socket sono punti di comunicazione che permettono la trasmissione di dati tra dispositivi o applicazioni su una rete. Sono utilizzate in architetture client-server dove il client invia richieste e il server risponde. Ogni socket è identificata da un indirizzo IP e una porta, e può utilizzare vari protocolli di rete, tra cui TCP/IP per comunicazioni affidabili e UDP per una comunicazione più veloce ma meno sicura. Le socket sono essenziali per le applicazioni distribuite e per la comunicazione tra dispositivi su Internet.</p>
+    </div>
+
+    <form id="quizForm">
+        <div class="question">
+            <p><strong>1. Cosa rappresenta una socket in informatica?</strong></p>
+            <label><input type="radio" name="q12" value="a"> Un software per gestire la rete</label><br>
+            <label><input type="radio" name="q12" value="b"> Un endpoint di comunicazione per trasmettere dati tra due dispositivi</label><br>
+            <label><input type="radio" name="q12" value="c"> Un protocollo di rete</label><br>
+            <label><input type="radio" name="q12" value="d"> Un tipo di connessione wireless</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>2. Qual è il principale protocollo utilizzato dalle socket per garantire una comunicazione affidabile?</strong></p>
+            <label><input type="radio" name="q22" value="a"> HTTP</label><br>
+            <label><input type="radio" name="q22" value="b"> UDP</label><br>
+            <label><input type="radio" name="q22" value="c"> TCP/IP</label><br>
+            <label><input type="radio" name="q22" value="d"> FTP</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>3. Cosa identifica una socket su una rete?</strong></p>
+            <label><input type="radio" name="q32" value="a"> Il nome dell'applicazione</label><br>
+            <label><input type="radio" name="q32" value="b"> Un indirizzo IP e un numero di porta</label><br>
+            <label><input type="radio" name="q32" value="c"> Il tipo di rete utilizzata</label><br>
+            <label><input type="radio" name="q32" value="d"> La velocità di connessione</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>4. In quale situazione un server crea una socket?</strong></p>
+            <label><input type="radio" name="q42" value="a"> Per inviare pacchetti di dati al client</label><br>
+            <label><input type="radio" name="q42" value="b"> Per ascoltare le richieste dei client in arrivo</label><br>
+            <label><input type="radio" name="q42" value="c"> Per stabilire una connessione senza ricevere richieste</label><br>
+            <label><input type="radio" name="q42" value="d"> Per autenticare i client con la rete</label><br>
+        </div>
+
+        <div class="question">
+            <p><strong>5. Qual è la differenza principale tra TCP e UDP nelle socket?</strong></p>
+            <label><input type="radio" name="q52" value="a"> TCP è più veloce e sicuro di UDP</label><br>
+            <label><input type="radio" name="q52" value="b"> UDP è più veloce ma meno sicuro di TCP</label><br>
+            <label><input type="radio" name="q52" value="c"> TCP è meno efficiente rispetto a UDP</label><br>
+            <label><input type="radio" name="q52" value="d"> UDP garantisce una comunicazione affidabile come TCP</label><br>
+        </div>
+
+        <br>
+        <button type="button" onclick="window.location.href='index.html'">Indietro</button>
+    </form>
+
+    <!-- Includiamo lo script per il timer -->
+    <script src="script.js"></script>
+</body>
+</html>
